@@ -1,0 +1,170 @@
+
+HARD RULES (DO NOT BREAK)
+
+ONLY TWO FILES
+
+index.html
+
+style.css
+
+NO JAVASCRIPT
+
+No JS files
+
+No inline scripts
+
+No animations requiring JS
+
+NO FRAMEWORKS OR LIBRARIES
+
+No Bootstrap
+
+No Tailwind
+
+No jQuery
+
+No external CSS frameworks
+
+HTML + CSS ONLY
+
+Pure HTML5
+
+Pure CSS3
+
+No preprocessors (SASS, SCSS, LESS)
+
+NO COMMENTS
+
+No HTML comments
+
+No CSS comments
+
+STUDENT-LEVEL CODE ONLY
+
+Simple div-based layout
+
+No advanced selectors
+
+No CSS variables
+
+No calc(), clamp(), grid-template-areas
+
+Flexbox allowed only for basic alignment
+
+No CSS Grid
+
+NO ADVANCED PROGRAMMING PATTERNS
+
+No BEM
+
+No utility-first styles
+
+No complex nesting
+
+No reusable component abstractions
+
+STATIC CONTENT ONLY
+
+Fixed text
+
+Fixed images (use placeholder image URLs if needed)
+
+No dynamic behavior
+
+STRUCTURE REQUIREMENTS
+
+Use basic semantic layout:
+
+header
+
+section
+
+div
+
+footer
+
+Match visual layout only, not exact pixel-perfect clone
+
+Desktop layout only (no responsive design required)
+
+Fixed width layout allowed
+
+CSS RULES
+
+All styles must be in style.css
+
+Use:
+
+margin
+
+padding
+
+background-color
+
+color
+
+font-family
+
+width / height
+
+display: flex (basic usage only)
+
+Fonts:
+
+Use default system fonts or Google Fonts via <link>
+
+No hover effects required
+
+No transitions or animations
+
+HTML RULES
+
+Link style.css properly
+
+Clean indentation
+
+Simple class names:
+
+header
+
+nav
+
+hero
+
+section
+
+box
+
+content
+
+footer
+
+IMAGE HANDLING
+
+Use public placeholder images if exact assets are unavailable
+
+Image sizes can be approximate
+
+No SVG manipulation
+
+OUTPUT FORMAT
+
+First show index.html
+
+Then show style.css
+
+No explanations
+
+No markdown explanations
+
+No extra text before or after code
+
+IMPORTANT
+
+Do NOT copy copyrighted text exactly
+
+Paraphrase content
+
+Layout similarity is acceptable
+
+This is for learning purposes only
