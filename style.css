@@ -354,3 +354,261 @@ body {
         max-height: 50vh;
     }
 }
+
+/* General Contracting Section */
+.general-contracting {
+    padding: 100px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.gc-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.gc-images {
+    flex: 1;
+    position: relative;
+    height: 600px;
+    /* Min height for collage */
+}
+
+.gc-img {
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    object-fit: cover;
+}
+
+.gc-img-1 {
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    left: 100px;
+    z-index: 2;
+}
+
+.gc-img-2 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 250px;
+    z-index: 1;
+}
+
+.gc-img-3 {
+    width: 300px;
+    height: 300px;
+    top: 200px;
+    left: 150px;
+    z-index: 3;
+}
+
+.gc-circle-decor {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    top: 350px;
+    left: 350px;
+    z-index: 2;
+}
+
+.gc-ring-decor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 15px solid #CED4DA;
+    border-radius: 50%;
+    top: 450px;
+    left: 500px;
+}
+
+.gc-content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.gc-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8899A6;
+    margin-bottom: 20px;
+}
+
+.gc-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.gc-btn {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.gc-btn:hover {
+    background-color: #e6c200;
+    color: #333;
+}
+
+.gc-credit {
+    font-size: 10px;
+    color: #999;
+}
+
+.gc-credit a {
+    color: #777;
+    text-decoration: underline;
+}
+
+/* GC Responsiveness */
+@media screen and (max-width: 768px) {
+    .gc-container {
+        flex-direction: column;
+    }
+
+    .gc-images {
+        width: 100%;
+        height: 500px;
+        /* Adjust for mobile collage */
+        margin-bottom: 40px;
+    }
+
+    /* Scale down collage for mobile */
+    .gc-img-1 {
+        width: 150px;
+        height: 150px;
+        left: 20px;
+    }
+
+    .gc-img-2 {
+        width: 180px;
+        height: 180px;
+        left: 140px;
+    }
+
+    .gc-img-3 {
+        width: 220px;
+        height: 220px;
+        top: 150px;
+        left: 60px;
+    }
+
+    .gc-circle-decor {
+        left: 220px;
+        top: 280px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .gc-ring-decor {
+        display: none;
+        /* Hide purely decorative ring on small screens if cluttered */
+    }
+
+    .gc-content {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+/* Future Building Section */
+.future-building {
+    padding: 100px 0;
+    background-color: #F8F9FA;
+}
+
+.fb-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.fb-title {
+    font-family: 'Oswald', sans-serif;
+    /* Updated to match user font */
+    font-size: 42px;
+    font-weight: 700;
+    color: #446688;
+    line-height: 1.2;
+    text-transform: none;
+    /* Reference image is not all caps */
+}
+
+.fb-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fb-item {
+    width: 48%;
+    /* Fallback for no gap/calc */
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.fb-icon {
+    min-width: 60px;
+    /* Larger icon container */
+    margin-right: 25px;
+    padding-top: 5px;
+}
+
+/* Creating a larger blue checkmark */
+.fb-icon::before {
+    content: '';
+    display: block;
+    width: 20px;
+    /* Larger */
+    height: 35px;
+    /* Larger */
+    border: solid #446688;
+    border-width: 0 4px 4px 0;
+    /* Thicker borders */
+    transform: rotate(45deg);
+}
+
+.fb-text-wrap {
+    flex: 1;
+}
+
+.fb-item-title {
+    font-family: 'Oswald', sans-serif;
+    /* Updated to match user font */
+    font-size: 16px;
+    /* Larger */
+    font-weight: 500;
+    /* Oswald is naturally bold/thick */
+    letter-spacing: 2px;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.fb-item-text {
+    font-size: 15px;
+    /* Larger */
+    line-height: 1.6;
+    color: #666;
+    max-width: 450px;
+}
+
+/* Responsiveness for Future Building */
+@media screen and (max-width: 768px) {
+    .fb-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .fb-title {
+        font-size: 32px;
+    }
+}
