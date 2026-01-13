@@ -612,3 +612,160 @@ body {
         font-size: 32px;
     }
 }
+
+/* About Us Section Refined */
+.about-us {
+    padding: 100px 0;
+    background-color: #2D3035;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-bg-strip {
+    position: absolute;
+    width: 70vw;
+    height: 180px;
+    background-color: #FFD700;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+}
+
+/* Columns */
+.about-col {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Col 1 */
+.about-col-1 {
+    margin-top: 50px;
+}
+
+.about-img-main {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+.about-text-block-1 {
+    padding-right: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.about-subtitle {
+    font-family: 'Oswald', sans-serif;
+    color: #FFD700;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: none;
+    font-weight: 500;
+}
+
+.about-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.about-credit {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.about-credit a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Col 2 */
+.about-col-2 {
+    margin-top: 0;
+}
+
+.about-title {
+    font-family: 'Oswald', sans-serif;
+    color: #FFD700;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1;
+    text-transform: none;
+}
+
+.about-img-secondary {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-text-block-2 {
+    position: relative;
+    z-index: 3;
+}
+
+.about-desc-small {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.about-btn {
+    background-color: #FFD700;
+    color: #2D3035;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px 35px;
+    font-size: 12px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.about-btn:hover {
+    background-color: #fff;
+    color: #2D3035;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-col {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .about-col-1 {
+        margin-top: 0;
+    }
+
+    .about-bg-strip {
+        height: 100%;
+        top: 0;
+        transform: none;
+        opacity: 0.05;
+    }
+}
