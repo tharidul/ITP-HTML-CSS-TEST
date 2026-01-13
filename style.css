@@ -769,3 +769,182 @@ body {
         opacity: 0.05;
     }
 }
+
+/* Built on a Strong Foundation Section */
+.foundation {
+    padding: 100px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.found-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.found-title {
+    font-family: 'Oswald', sans-serif;
+    color: #446688;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.found-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.found-btn {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.found-btn:hover {
+    background-color: #e6c200;
+    color: #333;
+}
+
+/* Collage Layout */
+.found-collage {
+    position: relative;
+    max-width: 1000px;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.found-img-main {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    z-index: 3;
+    border: 15px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.found-img-small {
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    border-radius: 50%;
+    object-fit: cover;
+    left: 100px;
+    top: 0;
+    z-index: 4;
+    border: 10px solid #fff;
+}
+
+.found-decor-circle-yellow {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #FFD700;
+    right: 150px;
+    bottom: 50px;
+    z-index: 4;
+    border: 10px solid #fff;
+}
+
+.found-decor-ring-grey {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 25px solid #CED4DA;
+    bottom: 150px;
+    left: 50px;
+    z-index: 1;
+}
+
+/* Striped Decor top left */
+.found-decor-stripes-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: repeating-linear-gradient(-45deg,
+            #CED4DA,
+            #CED4DA 4px,
+            transparent 4px,
+            transparent 15px);
+    left: 200px;
+    top: 50px;
+    z-index: 1;
+}
+
+/* Striped Decor bottom right */
+.found-decor-stripes-2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: repeating-linear-gradient(-45deg,
+            #CED4DA,
+            #CED4DA 4px,
+            transparent 4px,
+            transparent 15px);
+    right: 50px;
+    bottom: 150px;
+    z-index: 1;
+}
+
+/* Responsive Foundation */
+@media screen and (max-width: 900px) {
+    .found-collage {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .found-img-main,
+    .found-img-small,
+    .found-decor-circle-yellow,
+    .found-decor-ring-grey,
+    .found-decor-stripes-1,
+    .found-decor-stripes-2 {
+        position: static;
+        transform: none;
+        margin-bottom: 20px;
+        border-width: 5px;
+    }
+
+    .found-img-main {
+        width: 300px;
+        height: 300px;
+    }
+
+    .found-img-small {
+        width: 200px;
+        height: 200px;
+        order: -1;
+    }
+
+    .found-decor-circle-yellow {
+        width: 150px;
+        height: 150px;
+    }
+
+    .found-decor-ring-grey,
+    .found-decor-stripes-1,
+    .found-decor-stripes-2 {
+        display: none;
+    }
+}
