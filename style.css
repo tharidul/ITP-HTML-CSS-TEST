@@ -948,3 +948,467 @@ body {
         display: none;
     }
 }
+
+/* Ecological Architecture Section */
+.eco-arch {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFD700;
+}
+
+.eco-container {
+    display: flex;
+    width: 100%;
+    /* Full width split */
+}
+
+.eco-content {
+    flex: 1;
+    padding: 100px 50px 100px 10%;
+    /* Left padding aligns with container loosely */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eco-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.eco-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.eco-btn {
+    align-self: flex-start;
+    border: 1px solid #333;
+    padding: 12px 30px;
+    background: transparent;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.eco-btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+.eco-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.eco-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Quote & Team Section */
+.quote-strip {
+    display: flex;
+    background-color: #2D3035;
+    /* Dark background */
+    color: #fff;
+    min-height: 400px;
+}
+
+.quote-container {
+    display: flex;
+    width: 100%;
+}
+
+.quote-img-left-wrapper,
+.quote-img-right-wrapper {
+    flex: 1;
+}
+
+.quote-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.quote-content {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* Reference matches left align or varied */
+}
+
+.quote-icon {
+    font-size: 80px;
+    line-height: 1;
+    font-family: serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.quote-text {
+    font-size: 15px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #ddd;
+}
+
+/* Interior Architectural Designs Section */
+.interior-arch {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.interior-container {
+    display: flex;
+    width: 100%;
+}
+
+.interior-image {
+    flex: 1;
+}
+
+.interior-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.interior-content {
+    flex: 1;
+    padding: 100px 10% 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.interior-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.interior-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.interior-credit {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.interior-credit a {
+    color: #555;
+    text-decoration: underline;
+}
+
+.interior-btn {
+    align-self: flex-start;
+    background-color: #2D3035;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    padding: 15px 40px;
+}
+
+.interior-btn:hover {
+    background-color: #444;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 80px 0;
+    background-color: #fff;
+    position: relative;
+    /* Contains yellow strip at bottom */
+}
+
+.contact-wrapper {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    /* Ensure form sits on white */
+    padding-bottom: 50px;
+}
+
+.contact-form-col {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-bottom-color: #333;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.email-icon {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: #45c4a0;
+    /* Green accent */
+    font-size: 18px;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-btn {
+    background-color: #FFD700;
+    border: none;
+    font-weight: 700;
+    width: 120px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-btn:hover {
+    background-color: #e6c200;
+}
+
+.contact-info-col {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.contact-sub {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.contact-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #446688;
+    margin-bottom: 25px;
+}
+
+.contact-details p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-details a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.social-title {
+    margin-top: 40px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #547291;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.social-icon:hover {
+    background-color: #333;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+}
+
+.contact-yellow-strip {
+    height: 150px;
+    background-color: #FFD700;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    /* Behind wrapper but visual at bottom */
+}
+
+/* Footer (Dark) */
+.footer {
+    background-color: #333;
+    color: #aaa;
+    padding: 50px 0;
+    font-size: 12px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    color: #999;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-credit {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+}
+
+.footer-credit a {
+    color: #999;
+    text-decoration: underline;
+}
+
+/* Responsiveness for Final Sections */
+@media screen and (max-width: 900px) {
+
+    .eco-container,
+    .quote-container,
+    .interior-container {
+        flex-direction: column;
+    }
+
+    .eco-content,
+    .interior-content {
+        padding: 50px 20px;
+        order: 1;
+        /* Content first */
+    }
+
+    .eco-image,
+    .interior-image {
+        height: 300px;
+        order: 2;
+    }
+
+    .quote-strip {
+        flex-direction: column;
+    }
+
+    .quote-container {
+        flex-direction: column;
+    }
+
+    .quote-img-left-wrapper,
+    .quote-img-right-wrapper {
+        height: 250px;
+    }
+
+    .quote-content {
+        padding: 50px 20px;
+        min-height: auto;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-form-col {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .contact-info-col {
+        padding-left: 0;
+    }
+
+    .contact-yellow-strip {
+        height: 100px;
+        /* Smaller strip on mobile */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        margin-left: 0;
+    }
+}
