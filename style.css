@@ -333,9 +333,19 @@ body {
         order: 1;
     }
 
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
     .hero-text {
         margin-left: auto;
         margin-right: auto;
+        font-size: 14px;
     }
 
     .hero-image-wrapper {
@@ -346,6 +356,37 @@ body {
 
     .hero-img {
         max-height: 50vh;
+    }
+
+    .bc-title {
+        font-size: 32px;
+    }
+
+    .bc-subtitle {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .bc-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .bc-card {
+        width: 90%;
+        max-width: 300px;
+        padding: 30px 20px;
+    }
+
+    .bc-img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .bc-overlay {
+        padding: 50px 0;
     }
 }
 
@@ -468,34 +509,39 @@ body {
 
     .gc-images {
         width: 100%;
-        height: 500px;
+        height: auto;
         margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .gc-img {
+        position: static;
+        border-width: 5px;
     }
 
     .gc-img-1 {
-        width: 150px;
-        height: 150px;
-        left: 20px;
+        width: 120px;
+        height: 120px;
     }
 
     .gc-img-2 {
-        width: 180px;
-        height: 180px;
-        left: 140px;
+        width: 140px;
+        height: 140px;
     }
 
     .gc-img-3 {
-        width: 220px;
-        height: 220px;
-        top: 150px;
-        left: 60px;
+        width: 160px;
+        height: 160px;
     }
 
     .gc-circle-decor {
-        left: 220px;
-        top: 280px;
-        width: 100px;
-        height: 100px;
+        position: static;
+        width: 80px;
+        height: 80px;
     }
 
     .gc-ring-decor {
@@ -505,6 +551,11 @@ body {
     .gc-content {
         padding-left: 0;
         text-align: center;
+    }
+
+    .gc-btn {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -1363,5 +1414,147 @@ body {
 
     .footer-links a {
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 10px;
+    }
+
+    .hero-text {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 11px;
+    }
+
+    .bc-title {
+        font-size: 26px;
+    }
+
+    .bc-card {
+        width: 95%;
+    }
+
+    .gc-title {
+        font-size: 28px;
+    }
+
+    .gc-img-1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .gc-img-2 {
+        width: 110px;
+        height: 110px;
+    }
+
+    .gc-img-3 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .gc-circle-decor {
+        width: 60px;
+        height: 60px;
+    }
+
+    .fb-title {
+        font-size: 26px;
+    }
+
+    .fb-item {
+        flex-direction: column;
+    }
+
+    .fb-icon {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .about-title {
+        font-size: 32px;
+    }
+
+    .about-subtitle {
+        font-size: 28px;
+    }
+
+    .about-img-main {
+        height: 350px;
+    }
+
+    .about-img-secondary {
+        height: 280px;
+    }
+
+    .found-title {
+        font-size: 32px;
+    }
+
+    .found-img-main {
+        width: 250px;
+        height: 250px;
+    }
+
+    .found-img-small {
+        width: 150px;
+        height: 150px;
+    }
+
+    .found-decor-circle-yellow {
+        width: 100px;
+        height: 100px;
+    }
+
+    .eco-title,
+    .interior-title {
+        font-size: 28px;
+    }
+
+    .eco-content,
+    .interior-content {
+        padding: 40px 15px;
+    }
+
+    .quote-icon {
+        font-size: 50px;
+    }
+
+    .quote-text {
+        font-size: 13px;
+    }
+
+    .quote-img-left-wrapper,
+    .quote-img-right-wrapper {
+        height: 200px;
+    }
+
+    .contact-title {
+        font-size: 26px;
+    }
+
+    .contact-details p {
+        font-size: 13px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+    }
+
+    .footer-links a {
+        font-size: 11px;
     }
 }
