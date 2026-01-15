@@ -951,14 +951,20 @@ body {
 
 /* Ecological Architecture Section */
 .eco-arch {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #FFD700;
+    /* Container wrapper */
+    /* padding-bottom: 50px; Removed padding */
+    margin-bottom: 50px;
+    /* Add space below usage */
 }
 
 .eco-container {
     display: flex;
-    width: 100%;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #FFD700;
+    /* Move BG back to box */
+    flex-wrap: wrap;
     /* Full width split */
 }
 
@@ -1016,16 +1022,19 @@ body {
 
 /* Quote & Team Section */
 .quote-strip {
-    display: flex;
-    background-color: #2D3035;
-    /* Dark background */
-    color: #fff;
-    min-height: 400px;
+    /* Wrapper */
+    background: linear-gradient(to bottom, #fff 50%, #2D3035 50%);
 }
 
 .quote-container {
     display: flex;
-    width: 100%;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* background: linear-gradient(to bottom, #fff 50%, #2D3035 50%); Moved to wrapper */
+    /* Split background */
+    color: #fff;
+    min-height: 400px;
 }
 
 .quote-img-left-wrapper,
@@ -1046,6 +1055,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #2D3035;
+    /* Solid dark block in middle */
     /* align-items: center; */
     /* text-align: center; */
     /* Reference matches left align or varied */
@@ -1069,14 +1080,22 @@ body {
 
 /* Interior Architectural Designs Section */
 .interior-arch {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fff;
+    /* Wrapper */
+    padding-bottom: 80px;
+    /* Bottom padding for page flow */
+    background-color: #2D3035;
 }
 
 .interior-container {
     display: flex;
-    width: 100%;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* background-color: #2D3035; Moved to wrapper */
+    /* Move BG back to box */
+    /* Dark BG */
+    flex-wrap: wrap;
+    /* Box shadow to separate from white bg if needed, though not in spec */
 }
 
 .interior-image {
@@ -1096,6 +1115,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #fff;
+    /* White text card */
 }
 
 .interior-title {
