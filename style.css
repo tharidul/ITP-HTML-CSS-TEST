@@ -205,7 +205,6 @@ body {
     border-color: #333;
 }
 
-/* Image Side */
 .hero-image-wrapper {
     flex: 1;
     display: flex;
@@ -217,12 +216,10 @@ body {
 .hero-img {
     max-width: 100%;
     max-height: 85vh;
-    /* Keep it within view */
     object-fit: contain;
     display: block;
 }
 
-/* Building Company Section */
 .building-company {
     background-image: url('assests/images/bc5.jpg');
     background-size: cover;
@@ -314,7 +311,6 @@ body {
     color: #446688;
 }
 
-/* Responsiveness */
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
@@ -335,7 +331,6 @@ body {
         padding-right: 0;
         margin-bottom: 40px;
         order: 1;
-        /* Ensure text comes first */
     }
 
     .hero-text {
@@ -346,7 +341,6 @@ body {
     .hero-image-wrapper {
         justify-content: center;
         order: 2;
-        /* Image below text */
         height: auto;
     }
 
@@ -355,7 +349,6 @@ body {
     }
 }
 
-/* General Contracting Section */
 .general-contracting {
     padding: 100px 0;
     background-color: #fff;
@@ -372,7 +365,6 @@ body {
     flex: 1;
     position: relative;
     height: 600px;
-    /* Min height for collage */
 }
 
 .gc-img {
@@ -469,7 +461,6 @@ body {
     text-decoration: underline;
 }
 
-/* GC Responsiveness */
 @media screen and (max-width: 768px) {
     .gc-container {
         flex-direction: column;
@@ -478,11 +469,9 @@ body {
     .gc-images {
         width: 100%;
         height: 500px;
-        /* Adjust for mobile collage */
         margin-bottom: 40px;
     }
 
-    /* Scale down collage for mobile */
     .gc-img-1 {
         width: 150px;
         height: 150px;
@@ -511,7 +500,6 @@ body {
 
     .gc-ring-decor {
         display: none;
-        /* Hide purely decorative ring on small screens if cluttered */
     }
 
     .gc-content {
@@ -520,7 +508,6 @@ body {
     }
 }
 
-/* Future Building Section */
 .future-building {
     padding: 100px 0;
     background-color: #F8F9FA;
@@ -533,13 +520,11 @@ body {
 
 .fb-title {
     font-family: 'Oswald', sans-serif;
-    /* Updated to match user font */
     font-size: 42px;
     font-weight: 700;
     color: #446688;
     line-height: 1.2;
     text-transform: none;
-    /* Reference image is not all caps */
 }
 
 .fb-content {
@@ -550,29 +535,23 @@ body {
 
 .fb-item {
     width: 48%;
-    /* Fallback for no gap/calc */
     display: flex;
     margin-bottom: 60px;
 }
 
 .fb-icon {
     min-width: 60px;
-    /* Larger icon container */
     margin-right: 25px;
     padding-top: 5px;
 }
 
-/* Creating a larger blue checkmark */
 .fb-icon::before {
     content: '';
     display: block;
     width: 20px;
-    /* Larger */
     height: 35px;
-    /* Larger */
     border: solid #446688;
     border-width: 0 4px 4px 0;
-    /* Thicker borders */
     transform: rotate(45deg);
 }
 
@@ -582,11 +561,8 @@ body {
 
 .fb-item-title {
     font-family: 'Oswald', sans-serif;
-    /* Updated to match user font */
     font-size: 16px;
-    /* Larger */
     font-weight: 500;
-    /* Oswald is naturally bold/thick */
     letter-spacing: 2px;
     color: #333;
     margin-bottom: 15px;
@@ -595,13 +571,11 @@ body {
 
 .fb-item-text {
     font-size: 15px;
-    /* Larger */
     line-height: 1.6;
     color: #666;
     max-width: 450px;
 }
 
-/* Responsiveness for Future Building */
 @media screen and (max-width: 768px) {
     .fb-item {
         width: 100%;
@@ -613,7 +587,6 @@ body {
     }
 }
 
-/* About Us Section Refined */
 .about-us {
     padding: 100px 0;
     background-color: #2D3035;
@@ -641,14 +614,12 @@ body {
     max-width: 1000px;
 }
 
-/* Columns */
 .about-col {
     width: 46%;
     display: flex;
     flex-direction: column;
 }
 
-/* Col 1 */
 .about-col-1 {
     margin-top: 50px;
 }
@@ -694,7 +665,6 @@ body {
     text-decoration: underline;
 }
 
-/* Col 2 */
 .about-col-2 {
     margin-top: 0;
 }
@@ -747,7 +717,6 @@ body {
     color: #2D3035;
 }
 
-/* Responsiveness */
 @media screen and (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -770,7 +739,6 @@ body {
     }
 }
 
-/* Built on a Strong Foundation Section */
 .foundation {
     padding: 100px 0;
     background-color: #fff;
@@ -814,7 +782,6 @@ body {
     color: #333;
 }
 
-/* Collage Layout */
 .found-collage {
     position: relative;
     max-width: 1000px;
@@ -872,7 +839,6 @@ body {
     z-index: 1;
 }
 
-/* Striped Decor top left */
 .found-decor-stripes-1 {
     position: absolute;
     width: 300px;
@@ -888,7 +854,6 @@ body {
     z-index: 1;
 }
 
-/* Striped Decor bottom right */
 .found-decor-stripes-2 {
     position: absolute;
     width: 300px;
@@ -904,7 +869,6 @@ body {
     z-index: 1;
 }
 
-/* Responsive Foundation */
 @media screen and (max-width: 900px) {
     .found-collage {
         height: auto;
@@ -949,12 +913,8 @@ body {
     }
 }
 
-/* Ecological Architecture Section */
 .eco-arch {
-    /* Container wrapper */
-    /* padding-bottom: 50px; Removed padding */
     margin-bottom: 50px;
-    /* Add space below usage */
 }
 
 .eco-container {
@@ -963,15 +923,12 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     background-color: #FFD700;
-    /* Move BG back to box */
     flex-wrap: wrap;
-    /* Full width split */
 }
 
 .eco-content {
     flex: 1;
     padding: 100px 50px 100px 10%;
-    /* Left padding aligns with container loosely */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1020,9 +977,7 @@ body {
     display: block;
 }
 
-/* Quote & Team Section */
 .quote-strip {
-    /* Wrapper */
     background: linear-gradient(to bottom, #fff 50%, #2D3035 50%);
 }
 
@@ -1031,8 +986,6 @@ body {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    /* background: linear-gradient(to bottom, #fff 50%, #2D3035 50%); Moved to wrapper */
-    /* Split background */
     color: #fff;
     min-height: 400px;
 }
@@ -1056,10 +1009,6 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #2D3035;
-    /* Solid dark block in middle */
-    /* align-items: center; */
-    /* text-align: center; */
-    /* Reference matches left align or varied */
 }
 
 .quote-icon {
@@ -1078,11 +1027,8 @@ body {
     color: #ddd;
 }
 
-/* Interior Architectural Designs Section */
 .interior-arch {
-    /* Wrapper */
     padding-bottom: 80px;
-    /* Bottom padding for page flow */
     background-color: #2D3035;
 }
 
@@ -1091,11 +1037,7 @@ body {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    /* background-color: #2D3035; Moved to wrapper */
-    /* Move BG back to box */
-    /* Dark BG */
     flex-wrap: wrap;
-    /* Box shadow to separate from white bg if needed, though not in spec */
 }
 
 .interior-image {
@@ -1116,7 +1058,6 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
-    /* White text card */
 }
 
 .interior-title {
@@ -1159,12 +1100,10 @@ body {
     background-color: #444;
 }
 
-/* Contact Us Section */
 .contact-us {
     padding: 80px 0;
     background-color: #fff;
     position: relative;
-    /* Contains yellow strip at bottom */
 }
 
 .contact-wrapper {
@@ -1175,7 +1114,6 @@ body {
     position: relative;
     z-index: 2;
     background: #fff;
-    /* Ensure form sits on white */
     padding-bottom: 50px;
 }
 
@@ -1215,7 +1153,6 @@ body {
     right: 0;
     top: 15px;
     color: #45c4a0;
-    /* Green accent */
     font-size: 18px;
 }
 
@@ -1312,10 +1249,8 @@ body {
     bottom: 0;
     left: 0;
     z-index: 1;
-    /* Behind wrapper but visual at bottom */
 }
 
-/* Footer (Dark) */
 .footer {
     background-color: #333;
     color: #aaa;
@@ -1359,7 +1294,6 @@ body {
     text-decoration: underline;
 }
 
-/* Responsiveness for Final Sections */
 @media screen and (max-width: 900px) {
 
     .eco-container,
@@ -1372,7 +1306,6 @@ body {
     .interior-content {
         padding: 50px 20px;
         order: 1;
-        /* Content first */
     }
 
     .eco-image,
@@ -1414,7 +1347,6 @@ body {
 
     .contact-yellow-strip {
         height: 100px;
-        /* Smaller strip on mobile */
     }
 
     .footer-container {
